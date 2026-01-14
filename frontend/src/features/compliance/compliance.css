@@ -1,0 +1,141 @@
+/* Compliance Table Row Colors */
+/* We target td specifically because Ant Design sets background on td */
+
+.ant-table-tbody>tr.table-row-active>td,
+.table-row-active {
+    background-color: #f6ffed !important;
+}
+
+.ant-table-tbody>tr.table-row-active:hover>td {
+    background-color: #d9f7be !important;
+}
+
+.ant-table-tbody>tr.table-row-expiring>td,
+.table-row-expiring {
+    background-color: #fffbe6 !important;
+}
+
+.ant-table-tbody>tr.table-row-expiring:hover>td {
+    background-color: #ffe58f !important;
+}
+
+.ant-table-tbody>tr.table-row-expired>td,
+.table-row-expired {
+    background-color: #fff1f0 !important;
+}
+
+.ant-table-tbody>tr.table-row-expired:hover>td {
+    background-color: #ffccc7 !important;
+}
+
+.ant-table-tbody>tr.table-row-pending>td,
+.table-row-pending {
+    background-color: #fafafa !important;
+}
+
+.ant-table-tbody>tr.table-row-pending:hover>td {
+    background-color: #f0f0f0 !important;
+}
+
+/* Tab Fill Heights for Single View Dashboard */
+.compliance-tabs-fill {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.compliance-tabs-fill .ant-tabs-content-holder {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden !important;
+}
+
+.compliance-tabs-fill .ant-tabs-content,
+.compliance-tabs-fill .ant-tabs-tabpane {
+    height: 100% !important;
+}
+
+.compliance-tabs-fill .ant-tabs-tabpane {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+.compliance-tabs-fill .ant-tabs-nav {
+    margin-bottom: 0 !important;
+}
+
+/* Statistics Card Styling */
+.stat-card {
+    border-radius: 12px !important;
+    border: 1px solid #f0f0f0 !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.stat-title {
+    color: #8c8c8c;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.stat-icon {
+    font-size: 20px;
+    margin-right: 8px;
+    opacity: 0.8;
+}
+
+.stat-card-markets {
+    border-left: 4px solid #2f54eb !important;
+    background: linear-gradient(to right, #f0f5ff, #ffffff) !important;
+}
+
+.stat-card-active {
+    border-left: 4px solid #52c41a !important;
+    background: linear-gradient(to right, #f6ffed, #ffffff) !important;
+}
+
+.stat-card-expiring {
+    border-left: 4px solid #faad14 !important;
+    background: linear-gradient(to right, #fffbe6, #ffffff) !important;
+}
+
+.stat-card-gaps {
+    border-left: 4px solid #ff4d4f !important;
+    background: linear-gradient(to right, #fff1f0, #ffffff) !important;
+}
+
+/* Custom Watchlist Table Refined Styling */
+.custom-watchlist-table .ant-table {
+    background: transparent !important;
+}
+
+.custom-watchlist-table .ant-table-thead>tr>th {
+    background: transparent !important;
+    border-bottom: 2px solid #f0f0f0 !important;
+    color: #8c8c8c !important;
+    font-size: 11px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    padding: 12px 16px !important;
+}
+
+.custom-watchlist-table .ant-table-tbody>tr>td {
+    padding: 12px 16px !important;
+    border-bottom: 1px solid #f5f5f5 !important;
+    transition: all 0.2s ease;
+}
+
+.custom-watchlist-table .ant-table-tbody>tr:hover>td {
+    background: #fafafa !important;
+}
+
+.custom-watchlist-table .ant-table-placeholder .ant-empty {
+    padding: 32px 0;
+}

@@ -1,0 +1,51 @@
+.global-data-card {
+  width: 100%;
+}
+
+.global-tab-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.global-tab-content {
+  padding: 16px;
+  background: var(--color-bg-base, #ffffff);
+}
+
+.global-alert {
+  margin-bottom: 12px;
+}
+
+.global-card-note {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-secondary, #444444);
+}
+
+/* Regulatory Matrix Group Styling */
+.group-row {
+  background-color: #fafafa !important;
+  /* Light gray background */
+}
+
+.group-row td {
+  font-weight: 600;
+  color: #262626;
+}
+
+.group-header-text {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .global-tab-content {
+    padding: 12px;
+  }
+
+  .global-card-note {
+    font-size: 12px;
+  }
+}

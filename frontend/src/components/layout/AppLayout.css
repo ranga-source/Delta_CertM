@@ -1,0 +1,60 @@
+/**
+ * App Layout Styles
+ * =================
+ * Separate CSS file as per project requirements.
+ */
+
+.app-layout {
+  min-height: 100vh;
+  background: var(--color-bg-layout);
+}
+
+.app-layout-content {
+  min-height: calc(100vh - var(--header-height));
+}
+
+.content-layout {
+  background: var(--color-bg-layout);
+  min-height: calc(100vh - var(--header-height));
+}
+
+.main-content {
+  background: var(--color-bg-layout);
+  min-height: calc(100vh - var(--header-height));
+}
+
+.breadcrumb-container {
+  background: var(--color-bg-base);
+  padding: var(--spacing-sm) var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  border-radius: var(--border-radius-base);
+  box-shadow: var(--shadow-sm);
+}
+
+.page-wrapper {
+  padding: 0 var(--spacing-md) var(--spacing-md);
+  min-height: calc(100vh - var(--header-height) - 60px);
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .content-layout {
+    margin-left: 0 !important;
+  }
+
+  .page-wrapper {
+    padding: 0 var(--spacing-sm) var(--spacing-sm);
+  }
+
+  .breadcrumb-container {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+  }
+}
+
+/* Ensure content doesn't hide under fixed elements */
+@media (max-width: 767px) {
+  .main-content {
+    padding-top: 0;
+  }
+}

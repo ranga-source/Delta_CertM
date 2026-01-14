@@ -1,0 +1,98 @@
+/**
+ * Header Styles
+ * =============
+ * Separate CSS file as per project requirements.
+ */
+
+.app-header {
+  background: var(--color-bg-base);
+  box-shadow: var(--shadow-sm);
+  padding: 0 var(--spacing-md);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: var(--header-height);
+  line-height: var(--header-height);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* Branding */
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.brand-icon {
+  font-size: 24px;
+  color: var(--color-primary);
+}
+
+.brand-title {
+  margin: 0 !important;
+  font-size: var(--font-size-xl);
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.brand-subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  font-weight: normal;
+}
+
+/* Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.tenant-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.tenant-selector {
+  min-width: 200px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .app-header {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .brand-subtitle {
+    display: none;
+  }
+  
+  .tenant-label {
+    display: none;
+  }
+  
+  .tenant-selector {
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-title {
+    font-size: var(--font-size-lg);
+  }
+  
+  .brand-icon {
+    font-size: 20px;
+  }
+}
+
+
