@@ -82,6 +82,7 @@ function DeviceFormPage() {
     onSuccess: () => {
       message.success(id ? 'Device updated successfully' : 'Device created successfully');
       queryClient.invalidateQueries({ queryKey: QUERY_KEYS.devices(currentTenantId || '') });
+      queryClient.invalidateQueries({ queryKey: QUERY_KEYS.complianceRecords(currentTenantId || '') });
       if (id) {
         queryClient.invalidateQueries({ queryKey: QUERY_KEYS.device(id) });
       }
